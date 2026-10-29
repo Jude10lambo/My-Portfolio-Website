@@ -28,3 +28,68 @@
 .youtube-feature{grid-template-columns:.55fr 1.45fr}.youtube-copy{grid-column:2}.youtube-frames{grid-column:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:100%}.youtube-frames .youtube-frame{width:100%;max-width:none}.youtube-frame iframe{border:0}
 @media(max-width:900px){.youtube-feature{grid-template-columns:.55fr 1.45fr}.youtube-copy,.youtube-frames{grid-column:2}}
 @media(max-width:620px){.youtube-feature{grid-template-columns:1fr}.youtube-copy,.youtube-frames{grid-column:auto}.youtube-frames{grid-template-columns:1fr}.youtube-frames .youtube-frame{max-width:none}}
+
+/* Refine the narrow-screen layout after the section-specific rules above. */
+.round-link svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:620px){
+  html{scroll-padding-top:70px}
+  body{overflow-x:hidden}
+  .site-header{padding-left:5%;padding-right:5%}
+  .header-contact{margin-left:8px;font-size:.65rem;white-space:nowrap}
+  .main-nav{max-height:calc(100svh - 70px);overflow-y:auto}
+  .hero{height: min(780px, 92svh);min-height:570px}
+  .hero-content{top:28%;width:88%;left:6%}
+  .hero h1{font-size:clamp(3.55rem,16vw,5.4rem);line-height:.98;margin:25px 0 27px}
+  .hero-bottom{gap:18px;align-items:flex-end}
+  .hero-bottom p{max-width:230px;line-height:1.6}
+  .hero-index{bottom:22px}
+  .section-wrap{padding-left:6%;padding-right:6%}
+  .intro,.automotive,.experience,.skills,.contact,.youtube-feature,.credential-inner{gap:24px}
+  .section-label{font-size:.57rem;letter-spacing:.13em}
+  .intro{padding-top:72px;padding-bottom:72px}
+  .intro h2,.credential-copy h2{font-size:clamp(2.25rem,10vw,2.8rem)}
+  .portrait{height:clamp(250px,82vw,350px)}
+  .automotive{padding-top:72px;padding-bottom:75px}
+  .automotive-main h2,.experience-content h2,.skills-content h2{font-size:clamp(2.45rem,10.5vw,3.6rem)}
+  .body-copy,.automotive-lead{font-size:.88rem;line-height:1.8}
+  .experience,.skills{padding-top:72px;padding-bottom:76px}
+  .experience-card{padding:18px 16px}
+  .experience-card-title{align-items:flex-start}
+  .experience-card-title img{width:52px;height:52px}
+  .experience-card-title h3{font-size:1.05rem;line-height:1.35}
+  .traction{gap:18px 12px}
+  .traction span{font-size:.64rem}
+  .skill-groups{gap:22px}
+  .work{padding-top:68px;padding-bottom:72px}
+  .project-image,.project-small .project-image,.project-wide .project-image{height:auto;aspect-ratio:1.18}
+  .project-meta{gap:10px}
+  .project-meta h3{font-size:1rem}
+  .archive-grid img{height:auto;aspect-ratio:1;object-fit:cover}
+  .film-grid video{height:auto;aspect-ratio:16/9}
+  .youtube-feature{padding-top:70px;padding-bottom:72px}
+  .youtube-copy h2{font-size:clamp(2.35rem,10vw,3rem)}
+  .youtube-links{display:grid;gap:12px;justify-items:start}
+  .youtube-frames{gap:18px}
+  .youtube-frame{aspect-ratio:16/9}
+  .youtube-frame iframe{width:100%;height:100%}
+  .credentials{padding:70px 0}
+  .credential-cards{gap:14px}
+  .credential-cards .credential-preview{height:auto;aspect-ratio:1.45}
+  .contact{padding-top:72px;padding-bottom:70px}
+  .contact-main h2{font-size:clamp(3.8rem,16vw,5.4rem)}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:10px}
+  .contact-link{justify-content:space-between;gap:16px;padding:12px 14px;min-width:calc(50% - 5px);font-size:.7rem}
+  .contact-aside{gap:14px}
+  footer{padding-left:6%;padding-right:6%;gap:10px}
+  footer .wordmark{font-size:1.2rem}
+  footer p{font-size:.5rem}
+  footer>a:last-child{font-size:.47rem;white-space:nowrap}
+}
+@media(max-width:360px){
+  .header-contact{font-size:.6rem;margin-left:4px}
+  .menu-toggle{width:34px}
+  .hero h1{font-size:3.35rem}
+  .contact-link{min-width:100%}
+  footer{gap:6px}
+  footer>a:last-child{font-size:.42rem}
+}
